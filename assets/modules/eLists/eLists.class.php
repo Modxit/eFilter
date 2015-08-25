@@ -10,7 +10,7 @@ public $theme;
 public $info_type=1;
 public $eBlock=''; //there will be the main information block depending on the value $info_type
 public $info=''; //information sign in case of successful / unsuccessful actions
-public $zagol='parameter List';
+public $zagol='Lista parametri';
 public $list_catagory_table='';
 public $list_value_table='';
 public $type=array(// fields available in the form of
@@ -174,7 +174,7 @@ public function makeActions(){
 	//List of form fields
 	if(isset($_GET['fid'])&&isset($_GET['action'])&&$_GET['action']=='pole'&&!isset($_GET['pid'])){
 		$this->info_type=3;
-		$this->zagol='Setting list';
+		$this->zagol='Impostazioni Lista';
 
 		if(isset($_POST['sortpole'])){//sort field
 
